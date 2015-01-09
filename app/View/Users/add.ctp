@@ -18,10 +18,10 @@
 </div>
 <?php 
 if($this->Session->check('Auth.User')){
-echo $this->Html->link( "Return to Dashboard",   array('action'=>'index') ); 
+echo $this->Html->link(__('Return to Dashboard',true),   array('action'=>'index') ); 
 echo "<br>";
-echo $this->Html->link( "Logout",   array('action'=>'logout') ); 
+echo $this->Html->link(__('Logout',true),   array('action'=>'logout') ); 
 }else{
-echo $this->Html->link( "Return to Login Screen",   array('action'=>'login') ); 
+echo $this->Html->link(__('Return to Login Screen',true),   array('action'=>'login') ); 
 }
 ?>

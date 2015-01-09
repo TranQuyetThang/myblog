@@ -3,19 +3,19 @@
 <ul>
     <li>
         <?php echo $this->Html->link(
-            'Add Post',
+            __('Add Post',true),
             array('controller' => 'posts', 'action' => 'add')
         ); ?>
     </li>
     <li>
         <?php echo $this->Html->link(
-            'Dashboard',
+            __('Dashboard',true),
             array('controller' => 'users', 'action' => 'index')
         ); ?>
     </li>
     <li>
         <?php echo $this->Html->link(
-            'Logout',
+            __('Logout',true),
             array('controller' => 'users', 'action' => 'logout')
         ); ?>
     </li>
@@ -24,9 +24,9 @@
 
 <table>
     <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Created</th>
+        <th><?php echo __('Id'); ?></th>
+        <th><?php echo __('Title'); ?></th>
+        <th><?php echo __('Created'); ?></th>
     </tr>
 
     <!-- Here is where we loop through our $posts array, printing out post info -->
@@ -56,7 +56,7 @@ display:inline;
 
 #menu ul a{
 text-decoration:none;
-width:129px;
+width:150px;
 float:left;
 background:#000;
 color:#fff;

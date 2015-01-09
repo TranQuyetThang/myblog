@@ -20,7 +20,7 @@
  */
 
 App::uses('Controller', 'Controller');
-
+App::uses('String', 'Utility');
 /**
  * Application Controller
  *
@@ -39,7 +39,8 @@ class AppController extends Controller {
         'authError'      => 'You must be logged in to view this page.',
         'loginError'     => 'Invalid Username or Password entered, please try again.'
  
-    ));
+    )
+    );
  
 // only allow the login controllers only
 public function beforeFilter() {
@@ -51,4 +52,9 @@ public function isAuthorized($user) {
      
     return true;
 }
+
+public function defaultLanguage(){
+    $this->Session->write('Config.language', 'en');
+}
+
 }

@@ -24,7 +24,7 @@
 
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
-
+// define('DEFAULT_LANGUAGE', 'vie');
 /**
  * The settings below can be used to set additional paths to models, views and controllers.
  *
@@ -112,3 +112,4 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+

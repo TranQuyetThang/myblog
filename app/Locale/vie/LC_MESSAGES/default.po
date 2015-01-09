@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-01-08 10:56+0700\n"
+"PO-Revision-Date: 2015-01-08 10:57+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: vi\n"
+
+# ---------------------------------Text------------------------------
+msgid "Please enter your username and password"
+msgstr "Mời bạn nhập tên đăng nhập và mật khẩu"
+
+# ---------------------------------Form------------------------------
+msgid "username"
+msgstr "tên đăng nhập"
+
+msgid "password"
+msgstr "mật khẩu"
+
+msgid "Login"
+msgstr "Đăng nhập"
+
+
+# ---------------------------------Link------------------------------
+msgid "Add A New User"
+msgstr "Thêm tài khoản mới"
+
+# ---------------------------------Menu------------------------------
+msgid "Add Post"
+msgstr "Thêm bài viết"
+
+msgid "Dashboard"
+msgstr "Bảng điều khiển"
+
+msgid "Logout"
+msgstr "Đăng xuất"
+
+# ---------------------------------Table------------------------------
+msgid "Id"
+msgstr "Mã"
+
+msgid "Title"
+msgstr "Tiêu đề"
+
+msgid "Created"
+msgstr "Tạo vào ngày"
+
+
+msgid "Body"
+msgstr "Nội dung"
+
+msgid "Save Post"
+msgstr "Lưu bài viết"
+
+msgid "Your post has been saved."
+msgstr "Bài viết của bạn đã được lưu."
+
+msgid "Welcome, :user !"
+msgstr "Chào mừng, :user !"

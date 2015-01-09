@@ -11,23 +11,28 @@ class UsersController extends AppController {
     );
      
     public function beforeFilter() {
+        parent::defaultLanguage();
         parent::beforeFilter();
-        $this->Auth->allow('login','add'); 
+        $this->Auth->allow('login','add','changeLanguage','linken'); 
     }
      
  
  
     public function login() {
-         
+        
         //if already logged-in, redirect
         if($this->Session->check('Auth.User')){
             $this->redirect(array('action' => 'index'));      
         }
-         
+        $lang = !empty($this->request->params['code']) ? $this->request->params['code'] : 'vie';
+        $this->Session->write('Config.language', $lang);
         // if we get the post information, try to authenticate
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
-                $this->Session->setFlash(__('Welcome, '. $this->Auth->user('username')));
+                //$this->Session->setFlash(__('Welcome, '. $this->Auth->user('username')));
+                //$this->Session->setFlash(String::insert(__('Welcome, :user', array('user' => $this->Auth->user('username')))));
+     
+                $this->Session->setFlash(String::insert(__('Welcome, :user !'), array('user' => $this->Auth->user('username'))));
                 $this->redirect(array('controller' => 'posts','action'=>'index'));
             } else {
                 $this->Session->setFlash(__('Invalid username or password'));
@@ -130,6 +135,5 @@ class UsersController extends AppController {
         $this->redirect(array('action' => 'index'));
     }
  
-
 	
 }

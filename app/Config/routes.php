@@ -30,6 +30,7 @@
  */
 	Router::connect('/dashboard', array('controller' => 'users', 'action' => 'index'));
 	Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
+	Router::connect('/login/:code', array('controller' => 'users', 'action' => 'login'), array('code' => '[a-zA-Z0-9\-\_]+'));
 	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
