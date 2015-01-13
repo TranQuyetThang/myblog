@@ -1,6 +1,6 @@
 <?php
-class myblog extends CakeSchema{
-	var $name = 'myblog';
+class AppSchema extends CakeSchema{
+	var $name = 'AppSchema';
 
 	function before($event = array()){
 		return true;

@@ -70,6 +70,10 @@ Cache::config('default', array('engine' => 'File'));
  *
  */
 
+
+CakePlugin::loadAll(); // Loads all plugins at once
+CakePlugin::load('Migrations');
+CakePlugin::load('Utils');
 /**
  * To prefer app translation over plugin translation, you can set
  *
